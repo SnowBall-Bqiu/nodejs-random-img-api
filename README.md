@@ -28,6 +28,12 @@ npm start   # 运行 http://localhost:3000
 - `GET /h`  : 随机返回一张 **横屏** 图片并 **重定向** 到 `/img/h/<filename>`
 - `GET /m`  : 随机返回一张 **竖屏** 图片并 **重定向** 到 `/img/m/<filename>`
 - `GET /img/*` : 直接访问 `img` 目录下的所有图片（静态文件服务）
+- `GET /<folder>` : 随机返回 `<folder>` 子目录下的任意图片（包括 `h` 与 `m`）
+- `GET /<folder>/h` : 随机返回 `<folder>/h` 子目录中的图片
+- `GET /<folder>/m` : 随机返回 `<folder>/m` 子目录中的图片
+- `GET /all` : 随机返回所有二级子目录中的任意图片
+- `GET /all/h` : 随机返回所有二级子目录的 `h` 子目录中的图片
+- `GET /all/m` : 随机返回所有二级子目录的 `m` 子目录中的图片
 
 ## 示例
 ```bash
